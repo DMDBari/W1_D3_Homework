@@ -105,38 +105,78 @@
 
 .img1 {
     grid-area: img1;
+    border-bottom: 1px solid grey;
+}
+
+#img1 {
+    padding: 40px 0 0 20px;
 }
 
 .show1 {
     grid-area: show1;
+    border-bottom: 1px solid grey;
+    position: relative;
+}
+
+.show1a {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    height: 80%;
+}
+
+.button {
+    background-color: rgb(234,182,37);
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 35%;
+    width: 190px;
+    height: 80px;
+    font-size: 30px;
+    border: 1px solid grey;
 }
 
 .img2 {
     grid-area: img2;
+    border-bottom: 1px solid grey;
 }
 
 .show2 {
     grid-area: show2;
+    border-bottom: 1px solid grey;
+    position: relative;
 }
 
 .img3 {
     grid-area: img3;
+    border-bottom: 1px solid grey;
 }
 
 .show3 {
     grid-area: show3;
+    border-bottom: 1px solid grey;
+    position: relative;
 }
 
 .img4 {
     grid-area: img4;
+    border-bottom: 1px solid grey;
 }
 
 .show4 {
     grid-area: show4;
+    border-bottom: 1px solid grey;
+    position: relative;
 }
 
 .footer {
     grid-area: footer;
+    background-color: black;
+    color: white;
 }
 
 .footer > div {
@@ -152,14 +192,40 @@
     grid-area: map;
 }
 
+.img-container {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-top: 120px;
+}
+
 .info {
     grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 80px 0 160px;
 }
 
 .shows {
     grid-area: shows;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 80px 0;
 }
 
 .social {
     grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 80px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
