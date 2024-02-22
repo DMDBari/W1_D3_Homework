@@ -4,10 +4,9 @@
 }
 
 .grid-container {
-    min-height: 200vh;
     display: grid;
-    grid-template-columns: 10vw 1fr 2fr 10vw;
-    grid-template-rows: 10vh 104.5vh 1fr 1fr 1fr 1fr 1fr 20vh;
+    grid-template-columns: 19.5vw 16vw 2fr 17vw;
+    grid-template-rows: 10vh 104.5vh 20vh 35vh 35vh 35vh 35vh 64vh;
     grid-template-areas: 
     "nav nav nav nav"
     "feature-pic feature-pic feature-pic feature-pic"
@@ -67,14 +66,41 @@
 
 .feature-pic {
     grid-area: feature-pic;
+    position: relative;
 }
 
 #feat-pic {
     max-height: 100%;
 }
 
+.feature-text {
+    color: white;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Center {
+    font-size: 180px;
+    white-space: nowrap;
+}
+
 .drop-down {
     grid-area: drop-down;
+    position: relative;
+}
+
+.drop-down > p {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(174, 174, 174);
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 95%;
+    padding-left: 60px;
+    font-size: 35px;
 }
 
 .img1 {
@@ -111,4 +137,29 @@
 
 .footer {
     grid-area: footer;
+}
+
+.footer > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "map info shows social";
+    height: 100%;
+}
+
+.map {
+    grid-area: map;
+}
+
+.info {
+    grid-area: info;
+}
+
+.shows {
+    grid-area: shows;
+}
+
+.social {
+    grid-area: social;
 }
