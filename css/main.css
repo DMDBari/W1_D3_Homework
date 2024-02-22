@@ -7,7 +7,7 @@
     min-height: 200vh;
     display: grid;
     grid-template-columns: 10vw 1fr 2fr 10vw;
-    grid-template-rows: 15vh 35vh 1fr 1fr 1fr 1fr 1fr 20vh;
+    grid-template-rows: 10vh 104.5vh 1fr 1fr 1fr 1fr 1fr 20vh;
     grid-template-areas: 
     "nav nav nav nav"
     "feature-pic feature-pic feature-pic feature-pic"
@@ -25,10 +25,52 @@
 
 .nav {
     grid-area: nav;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.nav span {
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+}
+
+
+.title {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    left: 7%
+}
+
+#title {
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: inline-flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 24%;
+    width: 37%;
+}
+
+
+
+.nav-links > a {
+    color:white;
+    text-decoration: none;
 }
 
 .feature-pic {
     grid-area: feature-pic;
+}
+
+#feat-pic {
+    max-height: 100%;
 }
 
 .drop-down {
